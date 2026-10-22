@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2354634}
   - component: {fileID: 6502283295743129895}
   - component: {fileID: -2076798898581433095}
+  - component: {fileID: 7473080246326090132}
   m_Layer: 0
   m_Name: Food_Steak_01
-  m_TagString: Untagged
+  m_TagString: Steak
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,3 +141,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.46739918, y: 0.08559368, z: 0.6615112}
   m_Center: {x: 0, y: 0.04279684, z: 0}
+--- !u!114 &7473080246326090132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a020718414b354be89c4d74ff011c7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FoodLifeCycle
+  lifeDuration: 2

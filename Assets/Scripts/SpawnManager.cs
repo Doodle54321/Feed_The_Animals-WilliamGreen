@@ -22,7 +22,7 @@ public bool isGameOver{get; private set;}
 private float spawnZPosition;
  [SerializeField] private float centerToEdge;
 private float timer;
-private bool isSpawningActive;
+private bool isSpawningActive = true;
 
 private void Awake()
 {
@@ -44,10 +44,6 @@ private void Update()
 
 private void HandleSpawningTimer()
 {
-    if (!isSpawningActive)
-    {
-        return;
-    }
 
     timer -= Time.deltaTime;
     if (timer <= 0.0f)
