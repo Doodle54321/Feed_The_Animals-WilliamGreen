@@ -7,6 +7,7 @@ TagManager:
   - Cookie
   - Steak
   - Banana
+  - FoodItEats
   layers:
   - Default
   - TransparentFX

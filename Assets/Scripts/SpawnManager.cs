@@ -55,7 +55,7 @@ private void HandleSpawningTimer()
 
 private void SpawnAnimal()
 {
-    if (animalPrefab != null && animalPrefab.Length > 0)
+ if (animalPrefab == null && animalPrefab.Length == 0)
     {
        return;
     }

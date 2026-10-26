@@ -1017,9 +1017,10 @@ GameObject:
   - component: {fileID: 9587438}
   - component: {fileID: 9047040048227457613}
   - component: {fileID: 4998567429886063040}
+  - component: {fileID: 2863368014707877630}
   m_Layer: 0
   m_Name: Animal_Horse_Black
-  m_TagString: Untagged
+  m_TagString: FoodItEats
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1032,9 +1033,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139514}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: -1.4422, z: 0.34159}
+  m_LocalScale: {x: 0.17873757, y: 0.17873757, z: 0.17873757}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 461868}
@@ -1044,7 +1045,7 @@ Transform:
   - {fileID: 464910}
   - {fileID: 491322}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &9587438
 Animator:
   serializedVersion: 7
@@ -1079,7 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c1fd02699224644ad39468a56a6999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimalMove
-  animalSpeed: 10
+  animalSpeed: 7
 --- !u!114 &4998567429886063040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1092,7 +1093,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea98ff8c036a4281b646720efa5afef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EatFood
-  FoodItEats: Banana
+  FoodItEats: Food_Banana_01
+--- !u!65 &2863368014707877630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139514}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.54, y: 80.8, z: 45}
+  m_Center: {x: 0, y: 17.88, z: 5.49}
 --- !u!1 &139532
 GameObject:
   m_ObjectHideFlags: 0

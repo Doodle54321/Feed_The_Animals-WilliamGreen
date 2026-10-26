@@ -149,7 +149,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 0.38823533, b: 0.7522315, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1330,13 +1330,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093746978}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -35.43324, y: -8.70656, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &2093746980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   - {fileID: 112640, guid: c7ca0992ba00761469f731111e56b107, type: 3}
   - {fileID: 102230, guid: 85de8c5eef336ad48900b2ac3e7bf65d, type: 3}
   - {fileID: 139514, guid: 03e4c5418c1e9164bb1955135d815833, type: 3}
-  animalsToFeed: 10
+  animalsToFeed: 100
   spawnStart: 2
   startFrequency: 1.5
   centerToEdge: 22

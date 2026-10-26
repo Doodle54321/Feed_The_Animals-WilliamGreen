@@ -1,10 +1,11 @@
 /*
 
-GameObject: Animal Prefab
+Target GameObject: Animal Prefab
 
-Description: Manages the eating behavior of an animal, allowing it to eat food upon collision while hungry, transitioning to a not hungry state after consuming food, and ignoring further food collisions.
+Description: Manages the eating behavior of an animal. In the Hungry state, the animal can eat food upon collision matching its preferred food type, transitioning it to Not Hungry where further food collisions are ignored.
 */
 
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class EatFood : MonoBehaviour
@@ -14,9 +15,15 @@ private bool IsHungry = true;
 
 private void OnCollisionEnter(Collision collision)
 {
-    if (IsHungry && collision.gameObject.CompareTag(FoodItEats))
+    if (!IsHungry)
+    {
+        return;
+    }
+
+    if (collision.gameObject.name.Contains(FoodItEats))
     {
         Destroy(collision.gameObject);
+        UIManager.Instance.ScoreUpdate(10);
         IsHungry = false;
     }
 }

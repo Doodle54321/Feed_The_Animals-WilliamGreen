@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 9503158}
   - component: {fileID: 7298275122132512601}
   - component: {fileID: 5011490677732914063}
+  - component: {fileID: 6534507060020637809}
   m_Layer: 0
   m_Name: Animal_Chick
   m_TagString: Untagged
@@ -126,15 +127,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112640}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.09, y: 0.09, z: 0.09}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.0000013554, y: -1.4711, z: 0.11983}
+  m_LocalScale: {x: 0.583333, y: 0.583333, z: 0.583333}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 408332}
   - {fileID: 499388}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &9503158
 Animator:
   serializedVersion: 7
@@ -169,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c1fd02699224644ad39468a56a6999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimalMove
-  animalSpeed: 15
+  animalSpeed: 10
 --- !u!114 &5011490677732914063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,7 +183,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea98ff8c036a4281b646720efa5afef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EatFood
-  FoodItEats: Cookie
+  FoodItEats: Food_Cookie_01
+--- !u!65 &6534507060020637809
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112640}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.31, y: 8.64, z: 7.58}
+  m_Center: {x: 0, y: 2.42, z: 0}
 --- !u!1 &113672
 GameObject:
   m_ObjectHideFlags: 0

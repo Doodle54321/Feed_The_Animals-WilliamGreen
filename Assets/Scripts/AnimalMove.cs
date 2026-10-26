@@ -25,8 +25,9 @@ private void MoveForward()
 
 private void DeleteOutOfScene()
 {
-    if (transform.position.z > outOfScene)
+if (transform.position.z < outOfScene)
     {
+        UIManager.Instance.AnimalsRemainingUpdate();
         Destroy(gameObject);
     }
 }
